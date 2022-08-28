@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number</title>
+</head>
+<style>
+  .parent{
+    display: flex;
+    justify-content: center;
+  }
+  input{
+    padding: 0.3rem;
+  }
+  input::placeholder{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  .btn{
+     border: none;
+     background-color: aqua;
+     padding: 0.3rem;
+     border-radius: 5px;
+     color: black;
+  }
+  p,h1{
+    text-align: center;
+  }
+</style>
+<body>
+  <div class="parent">
+    <div class="container">
+      <h1>Guess the Number</h1>
+       <p>Guess a number between <span class="min">0</span> and <span class="max">20</span></p>
+       <p class="message"></p>
+      <input type="number" class="guess-input" placeholder="Guess the number">
+      <button class="btn guess-btn">Submit</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
